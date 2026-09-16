@@ -101,7 +101,7 @@ model Alert {
   title      String
   message    String
   isRead     Boolean       @default(false)
-  entityType String? // "budget" | "transaction" | "recurring"
+  entityType String?
   entityId   String?
   createdAt  DateTime      @default(now())
 }
