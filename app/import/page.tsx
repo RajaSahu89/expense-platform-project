@@ -39,7 +39,6 @@ export default function ImportPage() {
     setHeaders(res.headers);
     setRows(res.rows);
     setTotalRows(res.totalRows);
-    // Best-effort guess at common bank export column names.
     const guess = (candidates: string[]) =>
       res.headers.find((h: string) => candidates.includes(h.toLowerCase())) ?? '';
     setMapping({
